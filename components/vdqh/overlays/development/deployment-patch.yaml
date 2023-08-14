@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: vdqh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-swoh-tenant/byoc-app-avid/vdqh@sha256:4d694fd94a937dd254cb22f02288d121d63afca4947b5076d5ba21d9db24c9e4
+        name: my-java-quarkus
+        resources: {}
+status: {}

@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: vdqh
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: vdqh
+    app.kubernetes.io/part-of: byoc-app-avid
+  name: vdqh
+spec:
+  rules:
+  - host: vdqh-byoc-swoh-tenant.apps.54c928c0e9511718e66e.hypershift.aws-2.ci.openshift.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: vdqh
+            port:
+              number: 8081
+        path: /
+        pathType: ImplementationSpecific
+status:
+  loadBalancer: {}
