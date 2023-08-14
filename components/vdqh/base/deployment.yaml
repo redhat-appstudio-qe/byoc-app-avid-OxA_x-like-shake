@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: vdqh
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-swoh-tenant/byoc-app-avid/vdqh@sha256:4d694fd94a937dd254cb22f02288d121d63afca4947b5076d5ba21d9db24c9e4
         name: my-java-quarkus
         ports:
         - containerPort: 8081
